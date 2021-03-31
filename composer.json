@@ -17,13 +17,64 @@
 			"Mythic\\" : "app/"
 		}
 	},
+	"repositories": [
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-attr"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-contracts"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-core"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-lang"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-media"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-pagination"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-template"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-theme"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-tools"
+		},
+		{
+			"type" : "vcs",
+			"url"  : "https://github.com/themehybrid/hybrid-view"
+		}
+	],
 	"require": {
-		"php" : ">=5.6",
-		"composer/installers" : "~1.0",
-		"justintadlock/hybrid-core" : "^5.0.0"
+		"php"                           : ">=5.6",
+		"composer/installers"           : "~1.0",
+		"justintadlock/hybrid-core"     : "dev-dev-6.0#35931bb as 5.2.0",
+		"themehybrid/hybrid-contracts"  : "dev-master#e171ea4 as 1.0.0",
+		"themehybrid/hybrid-tools"      : "dev-master#0154820 as 1.0.0",
+		"themehybrid/hybrid-attr"       : "dev-master#947c801",
+		"themehybrid/hybrid-lang"       : "dev-main#4dfa5b3",
+		"themehybrid/hybrid-media"      : "dev-master#2d72d04",
+		"themehybrid/hybrid-pagination" : "dev-master#1bdfa71",
+		"themehybrid/hybrid-template"   : "dev-master#4b87858 as 1.0.0",
+		"themehybrid/hybrid-theme"      : "dev-master#0dabb92",
+		"themehybrid/hybrid-view"       : "dev-master#0ef5e4c"
 	},
 	"require-dev": {
-		"wptrt/wpthemereview": "*",
-		"dealerdirect/phpcodesniffer-composer-installer": "0.4.4"
+		"wptrt/wpthemereview"                            : "*",
+		"dealerdirect/phpcodesniffer-composer-installer" : "^0.7.0"
 	}
 }

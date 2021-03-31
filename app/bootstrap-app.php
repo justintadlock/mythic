@@ -31,6 +31,14 @@ $mythic = new \Hybrid\Core\Application();
 # bootstrapping process.
 
 $mythic->provider( \Mythic\Providers\AppServiceProvider::class );
+$mythic->provider( \Hybrid\Attr\AttrServiceProvider::class );
+$mythic->provider( \Hybrid\Lang\LanguageServiceProvider::class );
+$mythic->provider( \Hybrid\Media\MetaServiceProvider::class );
+$mythic->provider( \Hybrid\Pagination\PaginationServiceProvider::class );
+$mythic->provider( \Hybrid\Template\TemplatesServiceProvider::class );
+$mythic->provider( \Hybrid\Template\HierarchyServiceProvider::class );
+$mythic->provider( \Hybrid\Theme\Provider::class );
+$mythic->provider( \Hybrid\View\ViewServiceProvider::class );
 
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.
